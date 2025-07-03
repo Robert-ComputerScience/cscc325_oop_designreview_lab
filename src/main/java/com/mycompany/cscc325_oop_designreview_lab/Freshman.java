@@ -6,7 +6,7 @@ package com.mycompany.cscc325_oop_designreview_lab;
  *
  * @author Gemini AI
  */
-public class Freshman extends Student {
+public abstract class Freshman extends Student {
 
     public Freshman(String name, int age, int credits) {
         // Call the constructor of the parent class, Student.

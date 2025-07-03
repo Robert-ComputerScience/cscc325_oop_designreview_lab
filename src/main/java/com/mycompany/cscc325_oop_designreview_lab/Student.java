@@ -11,7 +11,7 @@ package com.mycompany.cscc325_oop_designreview_lab;
  * @author MoaathAlrajab (and Gemini AI)
  */
 // ToDo 1: Make this class a child of Human.
-public class Student extends Human {
+public abstract class Student extends Human {
     private int credits;
     // ToDo 3: Add a field for GPA and create a setter and a getter.
     private double gpa;
@@ -21,7 +21,7 @@ public class Student extends Human {
      * It now calls the parent 'Human' constructor using super() and initializes its own fields.
      */
     public Student(String name, int age, int credits) {
-        super(name, age); // Call the constructor of the Human class.
+        super(name, (short) age); // Call the constructor of the Human class.
         this.credits = credits;
     }
 

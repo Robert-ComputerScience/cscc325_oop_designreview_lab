@@ -15,8 +15,28 @@ public class MainClass {
 
     public static void main(String[] args) {
         // ToDo 5: Fix the error by instantiating the correct subclass objects.
-        Freshman std1 = new Freshman("James", 20, 12); // name, age, credits
-        Senior std2 = new Senior("John", 30, 90);
+        Freshman std1 = new Freshman("James", 20, 12) {
+            @Override
+            public String getAddress() {
+                return "";
+            }
+
+            @Override
+            public void setAddress(String address) {
+
+            }
+        }; // name, age, credits
+        Senior std2 = new Senior("John", 30, 90) {
+            @Override
+            public String getAddress() {
+                return "";
+            }
+
+            @Override
+            public void setAddress(String address) {
+
+            }
+        };
 
         // ToDo 12: Set GPA using user input.
         Scanner scanner = new Scanner(System.in);

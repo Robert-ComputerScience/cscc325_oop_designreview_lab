@@ -6,7 +6,7 @@ package com.mycompany.cscc325_oop_designreview_lab;
  *
  * @author Gemini AI
  */
-public class Senior extends Student {
+public abstract class Senior extends Student {
 
     /**
      * Constructor for the Senior class.

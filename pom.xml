@@ -11,4 +11,17 @@
         <maven.compiler.target>18</maven.compiler.target>
         <exec.mainClass>com.mycompany.cscc325_oop_designreview_lab.Csc325_oop_designreview_lab</exec.mainClass>
     </properties>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>24</source>
+                    <target>24</target>
+                    <compilerArgs>--enable-preview</compilerArgs>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 </project>
